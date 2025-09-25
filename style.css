@@ -1,0 +1,54 @@
+
+.navbar a {
+    display: block;
+    text-align: center;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 13px;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: rgb(255, 255, 255);
+    color: #000;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+.jumbotron {
+    padding-top: 6rem;
+    background-color: red;
+}
+.project {
+    background-color: #009b0d;
+}
+.contact {
+    background-color: #009b0d;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+.bg-custom {
+    background-color: red!important; /* ganti dengan kode warna */
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.social-buttons {
+    margin-top: 15px;
+}
+
+.social-buttons .btn {
+    border-radius: 25px;
+    padding: 8px 20px;
+    font-weight: bold;
+}
+
+
