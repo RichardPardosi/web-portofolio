@@ -66,7 +66,7 @@ section {
     padding: 80px 0;        /* lebih tinggi dari section biasa */
     margin-top: 60px;       /* jarak atas dari About Me */
     margin-bottom: 60px;    /* jarak bawah dari Projects */
-    background-color: #f9f9f9; /* opsional: kasih background beda biar kontras */
+    background-color: #f3f3f3; /* opsional: kasih background beda biar kontras */
     border-radius: 10px;     /* biar agak lembut */
 }
 
