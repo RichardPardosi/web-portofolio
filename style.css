@@ -50,4 +50,51 @@ section {
     font-weight: bold;
 }
 
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Membesar sedikit */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+}
+
+/* Timeline Style */
+
+#experience {
+    padding: 80px 0;        /* lebih tinggi dari section biasa */
+    margin-top: 60px;       /* jarak atas dari About Me */
+    margin-bottom: 60px;    /* jarak bawah dari Projects */
+    background-color: #f9f9f9; /* opsional: kasih background beda biar kontras */
+    border-radius: 10px;     /* biar agak lembut */
+}
+
+.timeline {
+    list-style: none;
+    padding: 0;
+    position: relative;
+}
+.timeline li {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border-left: 3px solid #dc3545; /* warna merah sesuai tema kamu */
+}
+.timeline li h5 {
+    margin: 0;
+    font-weight: bold;
+}
+.timeline li span {
+    font-size: 0.9rem;
+    color: #888;
+}
+.timeline li p {
+    margin: 5px 0 0;
+}
+
+
+
+
+
+
 
