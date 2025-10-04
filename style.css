@@ -54,16 +54,6 @@ section {
     font-weight: bold;
 }
 
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-}
-
-.card:hover {
-    transform: scale(1.05); /* Membesar sedikit */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Efek bayangan */
-}
-
 /* Timeline Style */
 #experience {
     padding: 80px 0;
