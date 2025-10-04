@@ -1,3 +1,5 @@
+/* ================== STYLE DASAR ================== */
+
 .navbar a {
     display: block;
     text-align: center;
@@ -21,9 +23,11 @@
     padding-top: 6rem;
     background-color: red;
 }
+
 .project {
     background-color: #009b0d;
 }
+
 .contact {
     background-color: #009b0d;
 }
@@ -33,7 +37,7 @@ section {
 }
 
 .bg-custom {
-    background-color: red!important; /* ganti dengan kode warna */
+    background-color: red !important;
 }
 
 .text-justify {
@@ -61,13 +65,12 @@ section {
 }
 
 /* Timeline Style */
-
 #experience {
-    padding: 80px 0;        /* lebih tinggi dari section biasa */
-    margin-top: 60px;       /* jarak atas dari About Me */
-    margin-bottom: 60px;    /* jarak bawah dari Projects */
-    background-color: #f3f3f3; /* opsional: kasih background beda biar kontras */
-    border-radius: 10px;     /* biar agak lembut */
+    padding: 80px 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: #f3f3f3;
+    border-radius: 10px;
 }
 
 .timeline {
@@ -75,26 +78,149 @@ section {
     padding: 0;
     position: relative;
 }
+
 .timeline li {
     margin-bottom: 20px;
     padding-left: 20px;
-    border-left: 3px solid #dc3545; /* warna merah sesuai tema kamu */
+    border-left: 3px solid #dc3545;
 }
+
 .timeline li h5 {
     margin: 0;
     font-weight: bold;
 }
+
 .timeline li span {
     font-size: 0.9rem;
     color: #888;
 }
+
 .timeline li p {
     margin: 5px 0 0;
 }
 
+/* Wave Default */
+.wave {
+    transition: fill 0.4s ease;
+}
 
+/* Transisi halus antar elemen */
+body, .navbar, .card, footer, .jumbotron {
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
 
+/* ================== DARK MODE ================== */
 
+/* Warna dasar halaman & About Me */
+body.dark-mode {
+    background-color: #1c1c1c !important;
+    color: #e0e0e0 !important;
+}
 
+/* Navbar sama dengan Jumbotron */
+body.dark-mode .navbar {
+    background-color: #2a2a2a !important;
+}
 
+/* Jumbotron abu gelap */
+body.dark-mode .jumbotron {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+}
 
+body.dark-mode .jumbotron h2,
+body.dark-mode .jumbotron p {
+    color: #ffffff !important;
+}
+
+/* Card */
+body.dark-mode .card {
+    background-color: #1e1e1e !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #333 !important;
+}
+
+body.dark-mode .card-text {
+    color: #d0d0d0 !important;
+}
+
+/* Timeline */
+body.dark-mode #experience {
+    background-color: #2a2a2a !important;
+}
+
+body.dark-mode .timeline li {
+    border-left: 3px solid #0d6efd !important;
+}
+
+/* Buttons */
+body.dark-mode .btn {
+    border-color: #e0e0e0 !important;
+    color: #e0e0e0 !important;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #333 !important;
+    color: #fff !important;
+}
+
+/* Wave bawah jumbotron & contact */
+body.dark-mode .wave {
+    fill: #1c1c1c !important;
+}
+
+/* Wave di atas footer sedikit lebih gelap agar terlihat */
+body.dark-mode #contact .wave {
+    fill: #2a2a2a !important;
+}
+
+/* Footer */
+body.dark-mode footer {
+    background-color: #2a2a2a !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode footer a {
+    color: #ffffff !important;
+}
+
+body.dark-mode footer a:hover {
+    color: #ffc107 !important;
+}
+
+/* Hilangkan efek outline/kuning saat tombol di klik */
+#darkModeToggle:focus,
+#darkModeToggle:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* Atur posisi titik di depan tombol dark mode */
+.navbar-collapse > li.nav-item {
+    list-style-position: inside;   /* titik lebih dekat ke tombol */
+    padding-left: 6px;             /* geser sedikit ke kanan */
+    margin-left: 5px;              /* jarak halus dari tepi kiri */
+}
+
+/* Efek hover card lebih halus dan responsif */
+.card {
+    transition: all 0.4s ease; /* ganti: all agar mencakup semua perubahan */
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+/* Saat dark mode, buat shadow dan warna transisinya halus juga */
+body.dark-mode .card {
+    background-color: #1e1e1e !important;
+    transition: all 0.4s ease;
+}
+
+body.dark-mode .card:hover {
+    transform: scale(1.04);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05); /* bayangan lembut terang */
+}
