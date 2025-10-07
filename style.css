@@ -1,5 +1,3 @@
-/* ================== STYLE DASAR ================== */
-
 .navbar a {
     display: block;
     text-align: center;
@@ -94,7 +92,7 @@ section {
     transition: fill 0.4s ease;
 }
 
-/* Transisi halus antar elemen */
+/* Transisi antar elemen */
 body, .navbar, .card, footer, .jumbotron {
     transition: background-color 0.4s ease, color 0.4s ease;
 }
@@ -159,7 +157,6 @@ body.dark-mode .wave {
     fill: #1c1c1c !important;
 }
 
-/* Wave di atas footer sedikit lebih gelap agar terlihat */
 body.dark-mode #contact .wave {
     fill: #2a2a2a !important;
 }
@@ -169,42 +166,33 @@ body.dark-mode footer {
     background-color: #2a2a2a !important;
     color: #ffffff !important;
 }
-
 body.dark-mode footer a {
     color: #ffffff !important;
 }
-
 body.dark-mode footer a:hover {
     color: #ffc107 !important;
 }
 
-/* Hilangkan efek outline/kuning saat tombol di klik */
 #darkModeToggle:focus,
 #darkModeToggle:active {
     outline: none !important;
     box-shadow: none !important;
 }
-
-/* Atur posisi titik di depan tombol dark mode */
 .navbar-collapse > li.nav-item {
-    list-style-position: inside;   /* titik lebih dekat ke tombol */
-    padding-left: 6px;             /* geser sedikit ke kanan */
-    margin-left: 5px;              /* jarak halus dari tepi kiri */
+    list-style-position: inside;   
+    padding-left: 6px;             
+    margin-left: 5px;              
 }
-
-/* Efek hover card lebih halus dan responsif */
 .card {
-    transition: all 0.4s ease; /* ganti: all agar mencakup semua perubahan */
+    transition: all 0.4s ease; 
     border-radius: 10px;
     background-color: #fff;
 }
-
 .card:hover {
     transform: scale(1.04);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
-/* Saat dark mode, buat shadow dan warna transisinya halus juga */
 body.dark-mode .card {
     background-color: #1e1e1e !important;
     transition: all 0.4s ease;
@@ -212,5 +200,5 @@ body.dark-mode .card {
 
 body.dark-mode .card:hover {
     transform: scale(1.04);
-    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05); /* bayangan lembut terang */
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.05);
 }
