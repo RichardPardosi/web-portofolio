@@ -105,7 +105,6 @@ body.dark-mode {
     color: #e0e0e0 !important;
 }
 
-/* Navbar sama dengan Jumbotron */
 body.dark-mode .navbar {
     background-color: #2a2a2a !important;
 }
